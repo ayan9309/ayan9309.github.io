@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG image source</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #fff;
+    background:
+      radial-gradient(1100px 520px at 82% -12%, rgba(63, 143, 212, .38), transparent 62%),
+      radial-gradient(760px 420px at 6% 108%, rgba(43, 108, 176, .30), transparent 60%),
+      linear-gradient(158deg, #0f1c2e 0%, #16293f 46%, #1f3a5f 100%);
+  }
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(900px 600px at 30% 40%, #000 0%, transparent 80%);
+    -webkit-mask-image: radial-gradient(900px 600px at 30% 40%, #000 0%, transparent 80%);
+  }
+  .inner {
+    position: absolute;
+    inset: 0;
+    padding: 72px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 30px;
+    padding: 9px 18px 9px 15px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .85);
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 999px;
+  }
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex: none;
+  }
+  h1 {
+    margin: 0;
+    font-size: 88px;
+    font-weight: 800;
+    line-height: .98;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+  }
+  .role {
+    margin: 26px 0 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #3f8fd4;
+  }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+  }
+  .pills span {
+    padding: 9px 18px;
+    font-size: 16.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .88);
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 999px;
+  }
+  .foot {
+    position: absolute;
+    left: 84px; right: 84px; bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .62);
+  }
+  .foot strong { color: #fff; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="inner">
+  <p class="eyebrow"><span class="dot"></span>Kolhapur, Maharashtra · B.Tech CSE 2026</p>
+  <h1>Mohamadayan<br>Desai</h1>
+  <p class="role">Software Engineer · Java · Android · SQL · Python</p>
+  <div class="pills">
+    <span>Restaurant POS</span>
+    <span>Kitchen ticketing</span>
+    <span>Android TV</span>
+    <span>Field-sales CRM</span>
+    <span>SQL Server</span>
+  </div>
+</div>
+<div class="foot">
+  <span><strong>ayan9309.github.io</strong></span>
+  <span>github.com/ayan9309 · linkedin.com/in/mohamadayan-desai</span>
+</div>
+</body>
+</html>

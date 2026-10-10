@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    var m = location.hash.match(/theme=(light|dark)/);
+    var t = m ? m[1] : localStorage.getItem('theme');
+    if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.dataset.theme = t;
+  } catch (e) { document.documentElement.dataset.theme = 'light'; }
+})();
+</script>
+<title>Mohamadayan Desai — Software Engineer (Java · Android · SQL)</title>
+<meta name="description" content="Mohamadayan Desai — Software Engineer in Kolhapur, Maharashtra. Java, Android SDK, REST APIs, SQLite, SQL Server and Python. Builder of XpressPOS, Xpress KOT, an Android TV kitchen display and a field-sales CRM with call-log sync.">
+<meta name="author" content="Mohamadayan Desai">
+<link rel="canonical" href="https://ayan9309.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mohamadayan Desai — Software Engineer">
+<meta property="og:description" content="Commercial Android engineer. Restaurant POS ecosystem, kitchen ticketing, Android TV display, sales CRM — built in Java on REST APIs, SQLite and SQL Server.">
+<meta property="og:url" content="https://ayan9309.github.io/">
+<meta property="og:image" content="https://ayan9309.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mohamadayan Desai — Software Engineer (Java · Android · SQL · Python)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mohamadayan Desai — Software Engineer">
+<meta name="twitter:description" content="Commercial Android engineer. Restaurant POS ecosystem, kitchen ticketing, Android TV display, sales CRM — built in Java on REST APIs, SQLite and SQL Server.">
+<meta name="twitter:image" content="https://ayan9309.github.io/assets/og.png">
+<meta name="theme-color" content="#0f1c2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231f3a5f'/%3E%3Ctext x='50' y='70' font-family='Inter,Arial' font-size='56' font-weight='700' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohamadayan Desai",
+  "jobTitle": "Junior Android Developer",
+  "email": "mailto:ayan2004desai@gmail.com",
+  "telephone": "+91-9309231376",
+  "url": "https://ayan9309.github.io/",
+  "worksFor": { "@type": "Organization", "name": "RN Softwares & Consultors Pvt. Ltd." },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "D.Y. Patil Agriculture & Technical University, Talsande" },
+    { "@type": "CollegeOrUniversity", "name": "D.K.T.E. Yashwantrao Chavan Polytechnic, Ichalkaranji" }
+  ],
+  "sameAs": [
+    "https://github.com/ayan9309",
+    "https://www.linkedin.com/in/mohamadayan-desai"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kolhapur",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">MD<span> · Mohamadayan Desai</span></a>
+    <div class="nav__right">
+      <nav class="nav__menu" id="navMenu" aria-label="Section navigation">
+        <a href="#experience">Experience</a>
+        <a href="#products">Shipped work</a>
+        <a href="#depth">Engineering depth</a>
+        <a href="#research">Research &amp; ML</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a class="nav__cta" href="assets/resume/Mohamadayan-Desai-Resume.pdf" download>Resume</a>
+      </nav>
+      <button class="nav__theme" id="themeToggle" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ HERO -->
+  <section class="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="wrap hero__cols">
+      <div class="hero__col">
+        <p class="hero__eyebrow">
+          <span class="dot"></span>
+          Kolhapur, Maharashtra &nbsp;·&nbsp; B.Tech CSE 2026 &nbsp;·&nbsp; Available in 15&ndash;30 days
+        </p>
+        <h1 class="hero__name">Mohamadayan<br>Desai</h1>
+        <p class="hero__role">Software Engineer &nbsp;·&nbsp; Java &nbsp;·&nbsp; Android &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Python</p>
+        <p class="hero__lede">
+          I build commercial Android software that businesses run every day. An 11-month internship at
+          RN&nbsp;Softwares &amp; Consultors became a full-time engineering role, shipping a restaurant
+          POS ecosystem end to end &mdash; order capture, kitchen ticketing, an Android&nbsp;TV kitchen
+          display, a field-sales CRM, and the SQL&nbsp;Server work underneath all of it.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#products">See shipped work</a>
+          <a class="btn btn--ghost" href="assets/resume/Mohamadayan-Desai-Resume.pdf" download>Download resume</a>
+          <a class="btn btn--link" href="mailto:ayan2004desai@gmail.com">ayan2004desai@gmail.com</a>
+        </div>
+        <ul class="hero__links">
+          <li><a href="https://github.com/ayan9309" rel="noopener" target="_blank">GitHub <span class="ext">&nearr;</span></a></li>
+          <li><a href="https://www.linkedin.com/in/mohamadayan-desai" rel="noopener" target="_blank">LinkedIn <span class="ext">&nearr;</span></a></li>
+          <li><a href="tel:+919309231376">+91 93092 31376</a></li>
+        </ul>
+      </div>
+
+      <aside class="hero__aside reveal" aria-label="Current status at a glance">
+        <div class="console">
+          <div class="console__bar"><i></i><i></i><i></i><span>ayan.java</span></div>
+          <pre><code><span class="c-c">// current status</span>
+<span class="c-k">class</span> <span class="c-t">Ayan</span> {
+  <span class="c-f">role</span>      = <span class="c-s">"Junior Android Developer"</span>;
+  <span class="c-f">org</span>       = <span class="c-s">"RN Softwares &amp; Consultors"</span>;
+  <span class="c-f">fullTime</span>  = <span class="c-k">true</span>;          <span class="c-c">// since Jul 2026</span>
+  <span class="c-f">stack</span>     = { <span class="c-s">"Java"</span>, <span class="c-s">"Android SDK"</span>, <span class="c-s">"SQLite"</span>,
+               <span class="c-s">"SQL Server"</span>, <span class="c-s">"REST"</span>, <span class="c-s">"Git"</span> };
+  <span class="c-f">notice</span>    = <span class="c-s">"15&ndash;30 days"</span>;
+  <span class="c-f">status</span>    = <span class="c-s">"Open to offers"</span>;
+}<span class="cursor" aria-hidden="true">&#9612;</span></code></pre>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================================================ PROOF -->
+  <section class="proof" aria-label="Key figures">
+    <div class="wrap proof__grid">
+      <div class="proof__item reveal">
+        <span class="proof__num">11</span>
+        <span class="proof__label">months of commercial<br>Android experience</span>
+      </div>
+      <div class="proof__item reveal">
+        <span class="proof__num">5</span>
+        <span class="proof__label">production apps<br>contributed to</span>
+      </div>
+      <div class="proof__item reveal">
+        <span class="proof__num">1</span>
+        <span class="proof__label">research paper<br>published (IRJMETS)</span>
+      </div>
+      <div class="proof__item reveal">
+        <span class="proof__num">8.12</span>
+        <span class="proof__label">B.Tech CSE<br>CGPA / 10</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <p class="kicker reveal">01 &mdash; Where I am</p>
+      <h2 class="h2 reveal">Eleven months in, promoted, still shipping.</h2>
+
+      <div class="timeline">
+        <article class="t-item reveal">
+          <div class="t-item__when"><span>Jul 2026</span><span class="t-item__dash">&ndash; Present</span></div>
+          <div class="t-item__body">
+            <h3>Junior Android Developer <span class="badge">Full-time</span></h3>
+            <p class="t-item__org">RN Softwares &amp; Consultors Pvt. Ltd. &nbsp;·&nbsp; Kolhapur, Maharashtra</p>
+            <p>
+              Converted from internship to full-time at the end of the 11-month programme. Feature work across
+              the Xpress restaurant suite &mdash; Java on the client, REST against the product backend, SQLite
+              locally, SQL&nbsp;Server when the data itself needs surgery.
+            </p>
+          </div>
+        </article>
+
+        <article class="t-item reveal">
+          <div class="t-item__when"><span>Aug 2025</span><span class="t-item__dash">&ndash; Jul 2026</span></div>
+          <div class="t-item__body">
+            <h3>Junior Android Developer Intern <span class="badge badge--muted">11-month internship</span></h3>
+            <p class="t-item__org">RN Softwares &amp; Consultors Pvt. Ltd. &nbsp;·&nbsp; Kolhapur, Maharashtra</p>
+            <p>
+              Started in a structured training phase &mdash; SQLite CRUD through to Volley/JSON APIs, Firebase
+              Authentication and Realtime Database offline persistence &mdash; then moved onto live product work:
+              POS screens, kitchen ticketing, the Android&nbsp;TV display, CRM dashboards and background call-log sync.
+            </p>
+            <p class="t-item__note">
+              <strong>Emerging App Developer Award</strong> &mdash; RN Softwares, Nov 2025.
+            </p>
+          </div>
+        </article>
+
+        <article class="t-item reveal">
+          <div class="t-item__when"><span>2023</span><span class="t-item__dash">&ndash; 2026</span></div>
+          <div class="t-item__body">
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="t-item__org">D.Y. Patil Agriculture &amp; Technical University, Talsande &nbsp;·&nbsp; CGPA 8.12 / 10</p>
+            <p>
+              Ran the internship and the degree in parallel. Coursework projects in recommendation systems,
+              intrusion detection and cloud hosting are collected under <a href="#research">Research &amp; ML</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PRODUCTS -->
+  <section class="section section--alt" id="products">
+    <div class="wrap">
+      <p class="kicker reveal">02 &mdash; Shipped products</p>
+      <h2 class="h2 reveal">Five apps, one restaurant ecosystem.</h2>
+      <p class="lede reveal">
+        These are commercial products built for a client at RN Softwares, so I describe the engineering
+        rather than showing proprietary screens. Each entry is what the problem was, what I built, and how
+        it behaved in production.
+      </p>
+
+      <div class="cards">
+
+        <article class="card card--feature reveal">
+          <header class="card__head">
+            <div class="card__ident">
+              <span class="card__tile" aria-hidden="true">01</span>
+              <div>
+                <p class="card__idx">Product 01</p>
+                <h3 class="card__title">XpressPOS</h3>
+                <p class="card__sub">Restaurant point of sale &nbsp;·&nbsp; Android</p>
+              </div>
+            </div>
+            <p class="card__outcome">Production APK delivered</p>
+          </header>
+          <div class="card__block">
+            <p class="card__label">The problem</p>
+            <p>
+              A busy front-of-house has to seat guests by dining section, fire orders to the kitchen, then settle
+              a bill in whichever of five payment modes the guest chooses &mdash; and it has to survive a full
+              dinner service without losing a table's state.
+            </p>
+          </div>
+          <div class="card__block">
+            <p class="card__label">What I built</p>
+            <ul class="ticks">
+              <li>API-backed login and session handling.</li>
+              <li>Home screen with a dining-section selector and a CardView table grid.</li>
+              <li>Menu and Cart screens on a one-time REST menu fetch into SQLite, with a manual <em>Sync&nbsp;Data</em> control &mdash; so service continues when the network doesn't.</li>
+              <li>Table Summary and bill settlement across Cash, Card, UPI, Cheque and NEFT: settle, credit, modify, cancel, bill-to-room and reprint.</li>
+              <li>Item-level order actions, plus waiter/captain assignment and PAX capture.</li>
+            </ul>
+          </div>
+          <div class="card__block">
+            <p class="card__label">The part I'd point at in an interview</p>
+            <p>
+              A reusable, API-driven <strong>User Authority</strong> permission module. Role checks resolve from the
+              backend instead of being hard-coded per screen, so a venue can change what a waiter may cancel
+              or reprint without me shipping a new build.
+            </p>
+          </div>
+          <footer class="card__tags">
+            <span>Java</span><span>Android SDK</span><span>XML</span><span>RecyclerView / CardView</span><span>SQLite</span><span>Volley + REST / JSON</span><span>SharedPreferences</span>
+          </footer>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <div class="card__ident">
+              <span class="card__tile" aria-hidden="true">02</span>
+              <div>
+                <p class="card__idx">Product 02</p>
+                <h3 class="card__title">Xpress KOT</h3>
+                <p class="card__sub">Kitchen order ticketing &nbsp;·&nbsp; Android</p>
+              </div>
+            </div>
+          </header>
+          <div class="card__block">
+            <p class="card__label">The problem</p>
+            <p>
+              Kitchen staff read tickets from across a hot room, and tables get split, transferred and merged
+              mid-service. A merge that writes half its rows means the kitchen cooks the wrong thing.
+            </p>
+          </div>
+          <div class="card__block">
+            <p class="card__label">What I built</p>
+            <ul class="ticks">
+              <li>Translated Figma wireframes into production XML layouts.</li>
+              <li>Cart Activity with a dynamic font-size accessibility setting for distance legibility.</li>
+              <li>A reusable, parameterized custom alert-dialog module used across the app.</li>
+              <li>Previous-KOT history, and Transfer / Merge Table logic with atomic database handling &mdash; a merge completes fully or not at all.</li>
+              <li>Role-gated <em>Cancel&nbsp;KOT</em> and customer-profile capture.</li>
+            </ul>
+          </div>
+          <footer class="card__tags">
+            <span>Java</span><span>XML</span><span>SQLite transactions</span><span>Figma &rarr; UI</span><span>Custom dialogs</span><span>Role-based access</span>
+          </footer>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <div class="card__ident">
+              <span class="card__tile" aria-hidden="true">03</span>
+              <div>
+                <p class="card__idx">Product 03</p>
+                <h3 class="card__title">Kitchen Display</h3>
+                <p class="card__sub">Ready-ticket board &nbsp;·&nbsp; Android TV</p>
+              </div>
+            </div>
+            <p class="card__outcome">Multi-resolution tested &amp; deployed</p>
+          </header>
+          <div class="card__block">
+            <p class="card__label">The problem</p>
+            <p>
+              The same ticket data now had to be readable from several metres away, on a large screen, in an
+              app lineage designed for phones.
+            </p>
+          </div>
+          <div class="card__block">
+            <p class="card__label">What I built</p>
+            <ul class="ticks">
+              <li>Card-based ready-KOT board laid out for large screens.</li>
+              <li>Real-time REST sync against the Xpress Kitchen Screen backend.</li>
+              <li>Admin-adjustable font and card scaling, so a venue tunes legibility on site instead of waiting on a rebuild.</li>
+              <li>Multi-resolution testing through to deployment.</li>
+            </ul>
+          </div>
+          <footer class="card__tags">
+            <span>Android TV</span><span>Java</span><span>REST sync</span><span>Responsive layout</span><span>Large-screen UI</span>
+          </footer>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <div class="card__ident">
+              <span class="card__tile" aria-hidden="true">04</span>
+              <div>
+                <p class="card__idx">Product 04</p>
+                <h3 class="card__title">Xpress Sales CRM &amp; Call Logs</h3>
+                <p class="card__sub">Field-sales tooling &nbsp;·&nbsp; Android</p>
+              </div>
+            </div>
+          </header>
+          <div class="card__block">
+            <p class="card__label">The problem</p>
+            <p>
+              A field sales team needs customer location, follow-up history and call logs in one place &mdash; but
+              modern Android aggressively kills background work, so a naively written call-log sync silently
+              stops running.
+            </p>
+          </div>
+          <div class="card__block">
+            <p class="card__label">What I built</p>
+            <ul class="ticks">
+              <li>RecyclerView / CardView dashboards for the customer pipeline.</li>
+              <li>Google Maps customer tracking, with WhatsApp and call follow-up actions wired in.</li>
+              <li>Background call-log sync on BroadcastReceiver + SQLite + WorkManager, designed around Android&nbsp;12&ndash;15 background-execution limits rather than fighting them.</li>
+            </ul>
+          </div>
+          <footer class="card__tags">
+            <span>Java</span><span>WorkManager</span><span>BroadcastReceiver</span><span>SQLite</span><span>Google Maps SDK</span>
+          </footer>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <div class="card__ident">
+              <span class="card__tile" aria-hidden="true">05</span>
+              <div>
+                <p class="card__idx">Product 05</p>
+                <h3 class="card__title">Aadhaar Smart Reader</h3>
+                <p class="card__sub">Document scanner &nbsp;·&nbsp; team support role</p>
+              </div>
+            </div>
+            <p class="card__outcome">Signed AAB build produced</p>
+          </header>
+          <div class="card__block">
+            <p class="card__label">My contribution</p>
+            <p>
+              Supporting a teammate's multi-document scanner app rather than leading it &mdash; which is its own
+              skill: reading someone else's architecture and extending it without breaking their assumptions.
+            </p>
+          </div>
+          <div class="card__block">
+            <p class="card__label">What I did</p>
+            <ul class="ticks">
+              <li>Login, home and scan UI flows.</li>
+              <li>Session handling and a searchable document history.</li>
+              <li>Made the Gemini API key configurable in Settings instead of baking it into the build.</li>
+              <li>Produced the signed AAB release build.</li>
+            </ul>
+          </div>
+          <footer class="card__tags">
+            <span>Java</span><span>Gemini API</span><span>Session management</span><span>AAB signing</span><span>Play release</span>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ DEPTH -->
+  <section class="section" id="depth">
+    <div class="wrap">
+      <p class="kicker reveal">03 &mdash; Engineering depth</p>
+      <h2 class="h2 reveal">The unglamorous parts are the parts that matter.</h2>
+      <p class="lede reveal">
+        Anyone can show a screen they built. These are the decisions underneath &mdash; the ones that decide
+        whether an app survives contact with a real restaurant at 9pm on a Saturday.
+      </p>
+
+      <div class="depth">
+        <article class="depth__item reveal">
+          <h3>Live-database surgery</h3>
+          <p>
+            Executed <code>ALTER TABLE</code> schema migrations against live production data in SQL&nbsp;Server (SSMS),
+            and diagnosed then recovered lost schemas and data on the live Xpress&nbsp;KOT database &mdash; restoring
+            restaurant operations. Working on a database you cannot afford to drop teaches you to read before
+            you write.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Offline-first by design</h3>
+          <p>
+            The POS menu is fetched once over REST into SQLite, with an explicit manual <em>Sync&nbsp;Data</em> control.
+            Venue Wi-Fi is not a guarantee, and an order screen that needs it is an order screen that fails
+            during service.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Atomicity where it hurts</h3>
+          <p>
+            Transfer and Merge Table operations are handled atomically. A half-applied merge is worse than a
+            visible error, because the kitchen keeps working from data that is quietly wrong.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Background work on modern Android</h3>
+          <p>
+            Call-log sync uses WorkManager and BroadcastReceiver within Android&nbsp;12&ndash;15 background-execution
+            limits. The constraint is designed around, not fought &mdash; a foreground service burning battery to
+            dodge the restriction would fail review anyway.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Reusable before clever</h3>
+          <p>
+            Two modules earned their keep: the API-driven <strong>User Authority</strong> permission layer and a
+            parameterized custom alert-dialog module. Both replaced copy-paste across many screens, and both
+            made the next feature cheaper to build.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Legibility is a feature</h3>
+          <p>
+            Dynamic font sizing on Xpress&nbsp;KOT and admin-adjustable scaling on the TV display. The person
+            reading a ticket is standing three metres away, mid-service, in a hot kitchen.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Actually shipping</h3>
+          <p>
+            Release builds taken through to a delivered production APK and a signed AAB, with multi-resolution
+            testing before deployment. Code that never leaves a debug build is a hobby.
+          </p>
+        </article>
+        <article class="depth__item reveal">
+          <h3>Daily stack</h3>
+          <p>
+            Java, Android SDK, REST APIs, SQLite, SQL&nbsp;Server, Git and Logcat &mdash; plus Firebase Authentication
+            and Realtime Database offline persistence from the training phase.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ RESEARCH & ML -->
+  <section class="section section--alt" id="research">
+    <div class="wrap">
+      <p class="kicker reveal">04 &mdash; Research &amp; machine learning</p>
+      <h2 class="h2 reveal">Range beyond the phone.</h2>
+      <p class="lede reveal">
+        Coursework and certification projects, in Python and on AWS. Included because they show I can work
+        outside the Android toolchain &mdash; not to pretend I'm a data scientist.
+      </p>
+
+      <div class="research">
+        <article class="r-item r-item--wide reveal">
+          <div class="r-item__top">
+            <h3>Location-Based Attendance System</h3>
+            <span class="pill pill--accent">Published &mdash; IRJMETS</span>
+          </div>
+          <p>
+            GPS-based Android attendance application, written up as
+            <em>&ldquo;The Location-Based Attendance System&rdquo;</em> and published in the International Research
+            Journal of Modernization in Engineering Technology and Science. A location signal is only as useful
+            as the trust you can place in it &mdash; spoofing is the first question any reviewer asks, and the
+            paper works through what the signal actually proves.
+          </p>
+          <footer class="card__tags"><span>Android</span><span>GPS / location APIs</span><span>Research writing</span></footer>
+        </article>
+
+        <article class="r-item reveal">
+          <div class="r-item__top">
+            <h3>Restaurant Recommendation System</h3>
+            <span class="pill">May 2026</span>
+          </div>
+          <p>
+            Content-based recommender using TF-IDF vectorisation and cosine similarity over cuisine features.
+          </p>
+          <footer class="card__tags"><span>Python</span><span>Pandas</span><span>TF-IDF</span><span>Cosine similarity</span></footer>
+        </article>
+
+        <article class="r-item reveal">
+          <div class="r-item__top">
+            <h3>AI-Enhanced Intrusion Detection</h3>
+            <span class="pill">Jul 2026</span>
+          </div>
+          <p>
+            Machine-learning classifier distinguishing normal from malicious network traffic.
+          </p>
+          <footer class="card__tags"><span>Python</span><span>scikit-learn</span><span>Classification</span></footer>
+        </article>
+
+        <article class="r-item reveal">
+          <div class="r-item__top">
+            <h3>Pumpkin Seed Variety Classification</h3>
+            <span class="pill">Mar 2026</span>
+          </div>
+          <p>
+            Supervised classification of seed variety from morphological features &mdash; project
+            <em>&ldquo;Harvesting Brilliance&rdquo;</em>.
+          </p>
+          <footer class="card__tags"><span>Python</span><span>scikit-learn</span><span>Supervised learning</span></footer>
+        </article>
+
+        <article class="r-item reveal">
+          <div class="r-item__top">
+            <h3>AWS EC2 &amp; VPC Hosting</h3>
+            <span class="pill">Jun 2026</span>
+          </div>
+          <p>
+            Deployed workloads on EC2 instances inside a custom VPC, administered over MobaXterm.
+          </p>
+          <footer class="card__tags"><span>AWS</span><span>EC2</span><span>VPC</span><span>MobaXterm</span></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <p class="kicker reveal">05 &mdash; Technical skills</p>
+      <h2 class="h2 reveal">What I actually work in.</h2>
+
+      <div class="skills">
+        <article class="skill reveal">
+          <h3>Languages</h3>
+          <div class="chips"><span>Java</span><span>C / C++</span><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML / CSS</span></div>
+        </article>
+        <article class="skill reveal">
+          <h3>Android &amp; mobile</h3>
+          <div class="chips"><span>Android SDK</span><span>Activities &amp; Fragments</span><span>XML layouts</span><span>RecyclerView / CardView</span><span>SQLite</span><span>SharedPreferences</span><span>Services</span><span>BroadcastReceiver</span><span>WorkManager</span><span>Volley + REST / JSON</span><span>Firebase Auth</span><span>Firebase Realtime DB</span><span>Google Maps SDK</span><span>Material Design</span><span>Responsive &amp; accessible UI</span><span>APK / AAB release builds</span></div>
+        </article>
+        <article class="skill reveal">
+          <h3>Backend &amp; data</h3>
+          <div class="chips"><span>SQL Server (SSMS)</span><span>Schema migrations</span><span>Data recovery</span><span>MySQL</span><span>REST APIs</span><span>JSON</span><span>SQLite</span><span>Firebase</span></div>
+        </article>
+        <article class="skill reveal">
+          <h3>Python &amp; data science</h3>
+          <div class="chips"><span>Pandas</span><span>scikit-learn</span><span>Jupyter</span><span>TF-IDF</span><span>Cosine similarity</span></div>
+        </article>
+        <article class="skill reveal">
+          <h3>Tools &amp; platforms</h3>
+          <div class="chips"><span>Android Studio</span><span>Figma</span><span>Git / GitHub</span><span>Logcat</span><span>SSMS</span><span>AWS EC2 / VPC</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CREDENTIALS -->
+  <section class="section section--alt" id="credentials">
+    <div class="wrap">
+      <p class="kicker reveal">06 &mdash; Credentials</p>
+      <h2 class="h2 reveal">Paper trail.</h2>
+
+      <div class="cred">
+        <div class="cred__col reveal">
+          <h3>Recognition</h3>
+          <ul class="plain">
+            <li>
+              <strong>Emerging App Developer Award</strong>
+              <span>RN Softwares &amp; Consultors &nbsp;·&nbsp; Nov 2025</span>
+            </li>
+            <li>
+              <strong>Research paper published in IRJMETS</strong>
+              <span>&ldquo;The Location-Based Attendance System&rdquo;</span>
+            </li>
+            <li>
+              <strong>Competitive programming</strong>
+              <span>CODEVERT &amp; ELECTROVERT 2K22-23, Walchand College &nbsp;·&nbsp; CRACKER 2K22, Dr. J.J. Magdum College</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cred__col reveal">
+          <h3>Education</h3>
+          <ul class="plain">
+            <li>
+              <strong>B.Tech, Computer Science &amp; Engineering</strong>
+              <span>D.Y. Patil Agriculture &amp; Technical University, Talsande &nbsp;·&nbsp; CGPA 8.12 / 10 &nbsp;·&nbsp; 2023 &ndash; 2026</span>
+            </li>
+            <li>
+              <strong>Diploma, Computer Science &amp; Engineering</strong>
+              <span>D.K.T.E. Yashwantrao Chavan Polytechnic, Ichalkaranji &nbsp;·&nbsp; 73.03% &nbsp;·&nbsp; 2020 &ndash; 2023</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cred__col cred__col--wide reveal">
+          <h3>Certifications</h3>
+          <ul class="certs">
+            <li><span>Cloud Practitioner</span><em>SmartBridge &nbsp;·&nbsp; Jun 2026</em></li>
+            <li><span>Applied Data Science</span><em>SmartBridge with Google for Developers &nbsp;·&nbsp; May 2026</em></li>
+            <li><span>Artificial Intelligence</span><em>SmartBridge with Google for Developers &nbsp;·&nbsp; Mar 2026</em></li>
+            <li><span>Introduction to Generative AI</span><em>IBM SkillsBuild &nbsp;·&nbsp; Feb 2026</em></li>
+            <li><span>Java Programming</span><em>Great Learning &nbsp;·&nbsp; Mar 2022</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="kicker kicker--light reveal">07 &mdash; Get in touch</p>
+      <h2 class="h2 h2--light reveal">Hiring for an Android or backend-leaning role?</h2>
+      <p class="contact__lede reveal">
+        I'm based in Kolhapur, Maharashtra and open to Pune, Mumbai, Bengaluru or Hyderabad &mdash; onsite or
+        remote. Notice period 15&ndash;30 days. Email is the fastest way to reach me.
+      </p>
+
+      <div class="contact__grid">
+        <a class="contact__card reveal" href="mailto:ayan2004desai@gmail.com">
+          <span class="contact__kind">Email</span>
+          <span class="contact__val">ayan2004desai@gmail.com</span>
+        </a>
+        <a class="contact__card reveal" href="tel:+919309231376">
+          <span class="contact__kind">Phone</span>
+          <span class="contact__val">+91 93092 31376</span>
+        </a>
+        <a class="contact__card reveal" href="https://www.linkedin.com/in/mohamadayan-desai" rel="noopener" target="_blank">
+          <span class="contact__kind">LinkedIn</span>
+          <span class="contact__val">in/mohamadayan-desai</span>
+        </a>
+        <a class="contact__card reveal" href="https://github.com/ayan9309" rel="noopener" target="_blank">
+          <span class="contact__kind">GitHub</span>
+          <span class="contact__val">ayan9309</span>
+        </a>
+      </div>
+
+      <div class="contact__cta reveal">
+        <a class="btn btn--light" href="assets/resume/Mohamadayan-Desai-Resume.pdf" download>Download resume (PDF)</a>
+        <a class="btn btn--outline" href="mailto:ayan2004desai@gmail.com?subject=Role%20at%20your%20company">Send a role description</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>&copy; <span id="year">2026</span> Mohamadayan Desai. Built and maintained by hand &mdash; semantic HTML, vanilla CSS and JS, no framework, no tracker.</p>
+    <a href="#top">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<a class="totop" id="toTop" href="#top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
