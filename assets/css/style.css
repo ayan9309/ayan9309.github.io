@@ -282,6 +282,15 @@ html[data-theme="dark"] .nav__theme:hover { color: #fff; border-color: var(--acc
   text-transform: uppercase;
 }
 
+.hero__alias {
+  margin: 12px 0 0;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .hero__role {
   margin: 22px 0 0;
   font-size: clamp(.98rem, 2.4vw, 1.16rem);
